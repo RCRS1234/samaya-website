@@ -1,46 +1,39 @@
-body{
+background: linear-gradient(rgba(255,255,255,0.9), rgba(240,240,240,0.9));
+
 font-family: Arial;
-margin:0;
+
 }
 
-.navbar{
-list-style:none;
-margin:0;
-padding:0;
-background:#2e7d32;
-overflow:hidden;
+img{
+
+border-radius:10px;
+
+opacity:0.95;
+
 }
 
-.navbar li{
-float:left;
+img:hover{
+
+opacity:1;
+
+box-shadow:0px 0px 10px gray;
+
 }
 
-.navbar li a{
-display:block;
-color:white;
-padding:14px 20px;
-text-decoration:none;
+table{
+
+background:white;
+
 }
 
-.navbar li a:hover{
-background:#1b5e20;
-}
+form{
 
-.dropdown-content{
-display:none;
-position:absolute;
-background:#f9f9f9;
-min-width:150px;
-}
+background:white;
 
-.dropdown-content li{
-float:none;
-}
+padding:20px;
 
-.dropdown-content li a{
-color:black;
-}
+border-radius:10px;
 
-.dropdown:hover .dropdown-content{
-display:block;
+box-shadow:0px 0px 10px gray;
+
 }
