@@ -2,82 +2,115 @@
 <html>
 
 <head>
-    <title>Samaya Pet and Poultry Supply</title>
-    <link rel="stylesheet" href="css/style.css">
+
+<title>Samaya Pet and Poultry Supply</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 
 <body>
 
-<header>
-    <h1>Samaya Pet and Poultry Supply</h1>
+<!-- NAVIGATION BAR -->
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#products">Products</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
 
+<div class="container">
 
-<section id="home">
-    <h2>Welcome to Samaya Pet and Poultry Supply</h2>
+<a class="navbar-brand" href="index.html">
+Samaya Pet Supply
+</a>
 
-    <p>
-       We sell Pet Foods, Medicines, Shampoo and Soap, Toys and Accesories, and All Kinds of Cages and Aquariums.
-    </p>
-</section>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
 
+<span class="navbar-toggler-icon"></span>
 
-<section id="products">
+</button>
 
-    <h2>Our Products</h2>
+<div class="collapse navbar-collapse" id="menu">
 
-    <h3>Pet Foods</h3>
-    <p>Safe and nutritious food for pets.</p>
+<ul class="navbar-nav ms-auto">
 
-    <h3>Medicines</h3>
-    <p>Health products and treatments for pets.</p>
+<li class="nav-item">
+<a class="nav-link" href="index.html">Home</a>
+</li>
 
-    <h3>Shampoo and Soap</h3>
-    <p>Cleaning and grooming products for pets.</p>
+<li class="nav-item dropdown">
 
-    <h3>Toys and Accessories</h3>
-    <p>Fun toys and accessories for pets.</p>
+<a class="nav-link dropdown-toggle" href="products.html" data-bs-toggle="dropdown">
+Products
+</a>
 
-    <h3>Cages and Aquariums</h3>
-    <p>Housing and habitat supplies for pets.</p>
+<ul class="dropdown-menu">
 
-</section>
+<li><a class="dropdown-item" href="#">Pet Food</a></li>
+<li><a class="dropdown-item" href="#">Medicines</a></li>
+<li><a class="dropdown-item" href="#">Toys</a></li>
+<li><a class="dropdown-item" href="#">Cages</a></li>
+<li><a class="dropdown-item" href="#">Aquariums</a></li>
 
+</ul>
 
-<section id="about">
+</li>
 
-    <h2>About Us</h2>
+<li class="nav-item">
+<a class="nav-link" href="about.html">About</a>
+</li>
 
-    <p>
-        Samaya Pet and Poultry Supply is dedicated to helping pet owners
-        care for their beloved animals by providing quality products at
-        affordable prices.
-    </p>
+<li class="nav-item">
+<a class="nav-link" href="contact.html">Contact</a>
+</li>
 
-</section>
+</ul>
 
+</div>
+</div>
+</nav>
 
-<section id="contact">
+<!-- SLIDER -->
 
-    <h2>Contact Us</h2>
+<div class="container mt-4">
 
-    <p>Location: Rizal Avenue, San Fernando City, La Union</p>
-    <p>Phone: 0917 192 5877</p>
-    <p>Facebook: SAMAYA PET AND POULTRY SUPPLY</p>
+<img id="slide" src="images/placeholder.jpg" class="img-fluid">
 
-</section>
+</div>
 
+<!-- ANIMATED IMAGE -->
+
+<div class="container mt-4 text-center">
+
+<img src="images/placeholder.gif" width="200">
+
+</div>
+
+<!-- SITE MAP -->
+
+<hr>
+
+<h4>Site Map</h4>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
 
 <footer>
-    <p>© 2026 Samaya Pet and Poultry Supply</p>
+
+<p>Developer: YOUR NAME</p>
+
 </footer>
+
+<script src="js/slider.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
