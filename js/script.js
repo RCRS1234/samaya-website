@@ -1,10 +1,8 @@
 var images = [
 
-"images/placeholder.jpg",
-
-"images/placeholder.jpg",
-
-"images/placeholder.jpg"
+"images/store.jpg",
+"images/petfood.jpg",
+"images/pets.jpg"
 
 ];
 
@@ -17,9 +15,7 @@ document.getElementById("slide").src = images[i];
 i++;
 
 if(i >= images.length){
-
 i = 0;
-
 }
 
 setTimeout(slideShow,3000);
