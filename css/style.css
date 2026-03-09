@@ -31,3 +31,34 @@ padding:20px;
 border-radius:10px;
 
 }
+:root{
+--dark-blue:#003A8F;
+--medium-blue:#2C6ED5;
+--light-blue:#E8F1FF;
+}
+
+/* Navbar */
+.custom-navbar{
+background-color:var(--dark-blue);
+}
+
+/* Navbar links */
+.navbar-nav .nav-link{
+color:white !important;
+font-weight:500;
+}
+
+/* Hover effect */
+.navbar-nav .nav-link:hover{
+color:var(--light-blue) !important;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu{
+border-radius:8px;
+}
+
+.dropdown-item:hover{
+background-color:var(--light-blue);
+color:var(--dark-blue);
+}
