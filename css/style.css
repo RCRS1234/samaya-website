@@ -1,8 +1,8 @@
-body{
-
-font-family: Arial;
- background: linear-gradient(white, var(--light-blue));
-
+body {
+  font-family: Arial;
+  background-image: url('images/ProfilePic.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 img{
