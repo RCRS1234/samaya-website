@@ -12,7 +12,12 @@ img{
 border-radius:10px;
 
 }
-
+:target{
+background-color: rgba(44,110,213,0.15);
+padding:10px;
+border-radius:8px;
+transition:0.4s;
+}
 img:hover{
 
 opacity:0.9;
