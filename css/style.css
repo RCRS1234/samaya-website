@@ -1,7 +1,7 @@
 body{
 font-family: Arial, sans-serif;
 background-image: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url("../images/ProfilePic.jpg");
-background-size: cover;
+background-size: 500px;
 background-position: center;
 background-repeat: no-repeat;
 background-attachment: fixed;
