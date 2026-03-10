@@ -1,7 +1,7 @@
 body{
 
 font-family: Arial;
-background: linear-gradient(white, #f0f0f0);
+background: var(--light-blue);
 
 }
 
