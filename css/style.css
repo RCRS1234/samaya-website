@@ -1,8 +1,10 @@
-body {
-  font-family: Arial;
-  background-image: url('images/ProfilePic.jpg');
-  background-size: cover;
-  background-position: center;
+body{
+font-family: Arial, sans-serif;
+background-image: url("images/ProfilePic.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
 }
 
 img{
