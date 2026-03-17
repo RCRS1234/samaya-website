@@ -121,3 +121,13 @@ cursor:pointer;
   height: auto;
   opacity: 0.7;
 }
+
+.logo-item {
+  list-style: none;
+  display: inline-block;
+}
+.logo-item img {
+  width: 15px;
+  height: auto;
+  opacity: 0.7;
+}
