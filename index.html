@@ -7,10 +7,11 @@
 
 <link rel="stylesheet" href="css/style.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
 </head>
+
 <body>
 
+<!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
 <div class="container">
 <a class="navbar-brand" href="index.html">Samaya Pet & Poultry Supply</a>
@@ -21,42 +22,41 @@
 
 <div class="collapse navbar-collapse" id="menu">
 <ul class="navbar-nav ms-auto">
-
-<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-<li class="nav-item"><a class="nav-link" href="products">Products</a></li>
-
-
+<li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
 <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-
 </ul>
 </div>
 </div>
 </nav>
 
+<!-- SLIDESHOW -->
+<div class="container mt-4">
 <div class="slideshow-container">
-  <img class="slide" src="images/DemureCat.jpg">
-  <img class="slide" src="images/DemureCat.jpg">
-  <img class="slide" src="images/DemureCat.jpg">
+<img class="slide" src="images/DemureCat.jpg">
+<img class="slide" src="images/DemureCat.jpg">
+<img class="slide" src="images/DemureCat.jpg">
+</div>
 </div>
 
+<!-- INTRO -->
 <div class="container mt-5">
-
 <h2>Welcome to Samaya Pet and Poultry Supply</h2>
 
 <p>
-Samaya Pet and Poultry Supply provides essential products for pet owners and animal lovers. 
-Our stores offer a wide range of supplies including pet food, medicines, grooming products, toys, 
-cages, and accessories designed to support the care and well-being of pets, as we sell the live little buddies as well.
+Samaya Pet and Poultry Supply provides essential products for pet owners and animal lovers.
+Our stores offer a wide range of supplies including pet food, medicines, grooming products,
+toys, cages, and accessories designed to support the care and well-being of pets.
 </p>
 
 <p>
-We aim to help pet owners find practical and affordable supplies that keep their pets neat, healthy, and happy.</p>
-
+We aim to help pet owners find practical and affordable supplies that keep their pets healthy and happy.
+</p>
 </div>
 
+<!-- FEATURED -->
 <div class="container mt-5">
-
 <h2>Featured Products</h2>
 
 <div class="row">
@@ -67,38 +67,37 @@ We aim to help pet owners find practical and affordable supplies that keep their
 <p>Nutritious food options for all.</p>
 </div>
 
-  <div class="col-md-4 text-center">
+<div class="col-md-4 text-center">
 <img src="images/birds-and-hamsters.jpg" class="img-fluid popup-img" onclick="openPopup(this)">
 <h4>Live Pets</h4>
 <p>Actual live pets.</p>
 </div>
-  
+
 <div class="col-md-4 text-center">
 <img src="images/utilities.jpg" class="img-fluid popup-img" onclick="openPopup(this)">
 <h4>Pet Utilities</h4>
 <p>Cages, toys, bowls, and more!</p>
 </div>
-  
 
+</div>
+</div>
 
+<!-- SERVICES -->
 <div class="container mt-5">
-
 <h2>What We Offer</h2>
 
 <ul>
-<li>Pet Foods for dogs, cats, birds, hamsters, and fish</li>
+<li>Pet Foods</li>
 <li>Pet Medicine and Vitamins</li>
-<li>Pet Shampoo and Grooming Products</li>
-<li>Toys and Pet Accessories</li>
-<li>Cages for birds and small animals</li>
+<li>Pet Grooming Products</li>
+<li>Toys and Accessories</li>
+<li>Cages</li>
 <li>Live Pets</li>
-<li>Friendly Service for You and Your Pet/s</li>
 </ul>
-
 </div>
 
+<!-- REVIEWS -->
 <div class="container mt-5">
-
 <h2>Positive Reviews</h2>
 
 <div class="row">
@@ -114,44 +113,55 @@ We aim to help pet owners find practical and affordable supplies that keep their
 <h4>Good job Team!</h4>
 <p>-Another Happy Human</p>
 </div>
-  
-  <div class="col-md-4 text-center">
+
+<div class="col-md-4 text-center">
 <img src="images/DemureCat.jpg" class="img-fluid popup-img" onclick="openPopup(this)">
 <h4>"Meow!"</h4>
 <p>-Professional Cat</p>
 </div>
-  
 
-  
 </div>
-
 </div>
 
 <hr>
 
+<!-- SITE MAP -->
 <div class="container">
-
 <h4>Site Map</h4>
-
 <ul>
 <li><a href="index.html">Home</a></li>
 <li><a href="products.html">Products</a></li>
 <li><a href="about.html">About</a></li>
 <li><a href="contact.html">Contact</a></li>
 </ul>
-
 </div>
 
+<!-- FOOTER -->
 <footer class="text-center mt-4">
 <p>Developer: Ryan Cecil R. Salimbagat</p>
 <p>© 2026 Samaya Pet and Poultry Supply</p>
 </footer>
 
-<script src="js/slider.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- POPUP -->
 <div id="imagePopup" class="popup">
 <span class="close" onclick="closePopup()">&times;</span>
 <img class="popup-content" id="popupImage">
 </div>
+
+<script src="js/slider.js"></script>
+
+<script>
+function openPopup(img) {
+  document.getElementById("imagePopup").style.display = "block";
+  document.getElementById("popupImage").src = img.src;
+}
+
+function closePopup() {
+  document.getElementById("imagePopup").style.display = "none";
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
