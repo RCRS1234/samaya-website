@@ -1,28 +1,22 @@
-var images = [
+let index = 0;
+showSlides();
 
-"images/store.jpg",
-"images/petfood.jpg",
-"images/pets.jpg"
+function showSlides() {
+  let slides = document.getElementsByClassName("slide");
 
-];
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
 
-var i = 0;
+  index++;
+  if (index > slides.length) {
+    index = 1;
+  }
 
-function slideShow(){
+  slides[index - 1].style.display = "block";
 
-document.getElementById("slide").src = images[i];
-
-i++;
-
-if(i >= images.length){
-i = 0;
+  setTimeout(showSlides, 3000); // change every 3 seconds
 }
-
-setTimeout(slideShow,3000);
-
-}
-
-window.onload = slideShow;
 
 function openPopup(img){
 document.getElementById("imagePopup").style.display = "block";
