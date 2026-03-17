@@ -110,15 +110,12 @@ cursor:pointer;
   display: none;
   border-radius: 10px;
 }
-
-.gif-container {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  z-index: 100;
+.gif-item {
+  list-style: none;
+  display: inline-block;
 }
-.gif-container img {
-  width: 50px;
+.gif-item img {
+  width: 15px;
   height: auto;
-  opacity: 0.8;
+  opacity: 0.7;
 }
