@@ -11,19 +11,45 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top"> 
   <div class="container"> 
- <li class="nav-item logo-item me-2">
-      <img src="images/samaya-profile-pic.jpg" alt="logo" width="15" height="15">
-    </li>
+
+    <img src="images/samaya-profile-pic.jpg" alt="logo" width="30" height="30" class="me-2">
+
     <a class="navbar-brand" href="index.html">Samaya Pet & Poultry Supply</a> 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="        
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
       <span class="navbar-toggler-icon"></span> 
     </button> 
+
     <div class="collapse navbar-collapse" id="menu"> 
       <ul class="navbar-nav ms-auto"> 
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> 
-        <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li> 
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li> 
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li> 
+
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            Products
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#food">Food Products</a></li>
+            <li><a class="dropdown-item" href="#medicine">Medicine</a></li>
+            <li><a class="dropdown-item" href="#toys">Toys and Tools</a></li>
+            <li><a class="dropdown-item" href="#habitats">Habitats</a></li>
+            <li><a class="dropdown-item" href="#live">Live Creatures</a></li>
+          </ul>
+        </li>
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li> 
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+
       </ul> 
     </div> 
   </div> 
@@ -48,7 +74,7 @@ For any inquiries regarding prices, orders, or specific products, please visit o
 
 </map>
 
-  <h5>Food Products</h5>
+  <h5 id="FP">Food Products</h5>
   <p>Disclaimer: These food products are for the pets. We do not recommend the human consumption of said food products or of the pets themselves.</p>
 <table class="table table-bordered mt-4">
   <tr> <th>Category</th> <th>Description</th> <th>Current Status</th> </tr>
@@ -56,7 +82,7 @@ For any inquiries regarding prices, orders, or specific products, please visit o
   <tr> <td>For Cats</td> <td>Cat food of different flavors</td> <td>Available</td> </tr>
   <tr> <td>For Poultry</td> <td>Bird seeds, feeds, and breeder mix.</td> <td>Available</td> </tr>
 </table>
-<h5> Medicine </h5>
+<h5 id="MD"> Medicine </h5>
   <p>Disclaimer: For medicines relating to health concerns, we recommend consulting your own veterinarian as we are not liable for any health-related issues.</p>
 <table class="table table-bordered mt-4">
   <tr> <th>Category</th> <th>Description</th> <th>Current Status</th> </tr>
@@ -64,7 +90,7 @@ For any inquiries regarding prices, orders, or specific products, please visit o
   <tr> <td>For Cats</td> <td>Syrups, sprays, and oils.</td> <td>Available</td> </tr>
   <tr> <td>For Fish</td> <td>Chlorine neutralizer, and vitamins.</td> <td>Available</td> </tr>
 </table>
-<h5> Toys and Tools </h5>
+<h5 id="TT"> Toys and Tools </h5>
 <table class="table table-bordered mt-4">
   <tr> <th>Category</th> <th>Description</th> <th>Current Status</th> </tr>
   <tr> <td>Toys for Mammals</td> <td>Chew toys, balls, and bowls.</td> <td>Available</td> </tr>
@@ -72,7 +98,7 @@ For any inquiries regarding prices, orders, or specific products, please visit o
   <tr> <td>Accessories</td> <td>Keychains.</td> <td>Available</td> </tr>
   
 </table>
-<h5> Habitats </h5>
+<h5 id="HB"> Habitats </h5>
 <table class="table table-bordered mt-4">
   <tr> <th>Category</th> <th>Description</th> <th>Current Status</th> </tr>
   <tr> <td>For Birds</td> <td>Cages, Bird Houses, and Branches</td> <td>Available</td> </tr>
@@ -80,7 +106,7 @@ For any inquiries regarding prices, orders, or specific products, please visit o
   <tr> <td>For Cats and Dogs</td> <td>Cages and Pet Beds</td> <td>Available</td> </tr>
   
 </table>
-<h5> Live Creatures </h5>
+<h5 id="LC"> Live Creatures </h5>
 <table class="table table-bordered mt-4">
   <tr> <th>Category</th> <th>Description</th> <th>Current Status</th> </tr>
   <tr> <td>Cats</td> <td>Feline mammals</td> <td>Available</td> </tr>
@@ -137,5 +163,6 @@ function closePopup() {
   document.getElementById("imagePopup").style.display = "none";
 }
 </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
