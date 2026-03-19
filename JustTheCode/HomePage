@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Samaya Pet and Poultry Supply | Home</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark sp-navbar fixed-top">
+  <div class="container">
+
+    <img src="images/samaya-profile-pic.jpg" alt="logo" width="30" height="30" class="me-2">
+
+    <a class="navbar-brand" href="index.html">Samaya Pet & Poultry Supply</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#spMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="spMenu">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            Products
+          </a>
+          <ul class="dropdown-menu sp-dropdown">
+            <li><a class="dropdown-item" href="products.html#food">Food Products</a></li>
+            <li><a class="dropdown-item" href="products.html#medicine">Medicine</a></li>
+            <li><a class="dropdown-item" href="products.html#toys">Toys and Tools</a></li>
+            <li><a class="dropdown-item" href="products.html#habitats">Habitats</a></li>
+            <li><a class="dropdown-item" href="products.html#live">Live Creatures</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+<!-- INTRO -->
+<div class="container mt-5">
+<h2>Welcome to Samaya Pet and Poultry Supply</h2>
+<p>We are open Monday to Saturday, 7:30AM-6:00PM & on Sundays, 7:30AM-6:00PM</p><br>
+<p>
+Samaya Pet and Poultry Supply provides essential products for pet owners and animal lovers.
+Our stores offer a wide range of supplies including pet food, medicines, grooming products,
+toys, cages, and accessories designed to support the care and well-being of pets.
+</p>
+
+<p>
+We aim to help pet owners find practical and affordable supplies that keep their pets healthy and happy.
+</p>
+</div>
+
+<!-- FEATURED -->
+<div class="container mt-5">
+<h2><a href="https://rcrs1234.github.io/samaya-website/products.html">Featured Products</a></h2>
+
+<div class="row">
+
+<div class="col-md-4 text-center">
+<img src="images/catFoods.png" class="img-fluid popup-img" onclick="openPopup(this)">
+<h4>Pet Food</h4>
+<p>Nutritious food options for all.</p>
+</div>
+
+<div class="col-md-4 text-center">
+<img src="images/birds-and-hamsters.jpg" class="img-fluid popup-img" onclick="openPopup(this)">
+<h4>Live Pets</h4>
+<p>Actual live pets.</p>
+</div>
+
+<div class="col-md-4 text-center">
+<img src="images/utilities.jpg" class="img-fluid popup-img" onclick="openPopup(this)">
+<h4>Pet Utilities</h4>
+<p>Cages, toys, bowls, and more!</p>
+</div>
+
+</div>
+</div>
+
+<!-- SERVICES -->
+<div class="container mt-5">
+<h2>What We Offer</h2>
+
+<ul>
+<li>Pet Foods</li>
+<li>Pet Medicine and Vitamins</li>
+<li>Pet Grooming Products</li>
+<li>Toys and Accessories</li>
+<li>Cages</li>
+<li>Live Pets</li>
+</ul>
+</div>
+
+<!-- REVIEWS -->
+<div class="container mt-5">
+<h2>Positive Reviews</h2>
+
+<div class="row">
+
+<div class="col-md-4 text-center">
+<img src="images/charlesA.jpg" class="img-fluid popup-img" onclick="openPopup(this)">
+<h4>"Gagi! Astig po!"</h4>
+<p>-A Satisfied Customer</p>
+</div>
+
+<div class="col-md-4 text-center">
+<img src="images/RedShirt.jpg" class="img-fluid popup-img" onclick="openPopup(this)">
+<h4>Good job Team!</h4>
+<p>-Another Happy Human</p>
+</div>
+
+<div class="col-md-4 text-center">
+<img src="images/DemureCat.jpg" class="img-fluid popup-img" onclick="openPopup(this)">
+<h4>"Meow!"</h4>
+<p>-Professional Cat</p>
+</div>
+
+</div>
+</div>
+
+<hr>
+
+<!-- SITE MAP -->
+<div class="container">
+<h4>Site Map</h4>
+<ul>
+<li><a href="index.html">Home      --You are Here</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+
+<!-- FOOTER -->
+<footer class="text-center mt-4">
+<p>Developer: Ryan Cecil R. Salimbagat</p>
+<p>© 2026 Samaya Pet and Poultry Supply</p>
+</footer>
+
+<!-- POPUP -->
+<div id="imagePopup" class="popup">
+<span class="close" onclick="closePopup()">&times;</span>
+<img class="popup-content" id="popupImage">
+</div>
+
+
+
+<script>
+function openPopup(img) {
+  document.getElementById("imagePopup").style.display = "block";
+  document.getElementById("popupImage").src = img.src;
+}
+
+function closePopup() {
+  document.getElementById("imagePopup").style.display = "none";
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+<div class="gif-container">
+  <img src="images/bunnyGif.gif" alt="GIF" width="30" height="30">
+</div>
+ 
+</body>
+</html>
